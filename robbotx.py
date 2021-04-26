@@ -12,8 +12,10 @@ def send():
         txt.insert(END,"\n"+"RobBot => Hello")
     elif(e.get()=="how are you"):
         txt.insert(END,"\n"+"RobBot => I'm fine and you?")
-    if(e.get()=="fine"):
+    elif(e.get()=="fine"):
         txt.insert(END,"\n"+"RobBot => Nice to hear")
+    else:
+        txt.insert(END,"\n"+"RobBot => Sorry I didn't understand that!?!?")
     e.delete(0,END)
 txt=Text(root)
 txt.grid(row=0,column=0,columnspan=2)
